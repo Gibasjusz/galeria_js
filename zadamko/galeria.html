@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="styl7.css">
+</head>
+<body>
+    <section id="banner">
+        <h2>Galeria miejsc ciekawych</h2>
+    </section>
+
+    <section id="main_block">
+        <img src="lanzarotte.jpg" alt="galeria" id="galeria">
+    </section>
+
+    <section id="left_block">
+        <h3>Przeglądaj zdjęcia</h3>
+        <img src="lanzarotte.jpg" alt="lanzarotte" id="laz" onclick="zmiana_foto2()">
+        <img src="pekin.jpg" alt="pekin" id="pek" onclick="zmiana_foto()">
+        <img src="serengeti.jpg" alt="serengeti" id="ser" onclick="zmiana_foto3()">
+        <img src="wenecja.jpg" alt="wenecja" id="wen" onclick="zmiana_foto4()">
+        <img src="tajlandia.jpg" alt="tajlandia" id="taj" onclick="zmiana_foto5()">
+    </section>
+
+    <section id="right_block">
+        <table>
+            <tr>
+                <td>Europa</td>
+                <td>Azja</td>
+                <td>Afryka</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </table>
+
+        <p>Polub nas</p>
+        <img src="icon-off.png" alt="serce" onclick="polub()" id="serce">
+        <a href=" https://pixabay.com" target="blank">Odkryj więcej zdjęć</a>
+    </section>
+
+    <section id="footer">
+        <p>Stronę wykonał: 1010101001010</p>
+    </section>
+
+    <script>
+        function zmiana_foto() {
+            var obrazek = document.getElementById('galeria').src;
+            document.getElementById('galeria').src = 'pekin.jpg';
+        }
+        function zmiana_foto2() {
+            var obrazek = document.getElementById('galeria').src;
+            document.getElementById('galeria').src = 'lanzarotte.jpg';
+        }  
+        function zmiana_foto3() {
+            var obrazek = document.getElementById('galeria').src;
+            document.getElementById('galeria').src = 'serengeti.jpg';
+        }  
+        function zmiana_foto4() {
+            var obrazek = document.getElementById('galeria').src;
+            document.getElementById('galeria').src = 'wenecja.jpg';
+        }  
+        function zmiana_foto5() {
+            var obrazek = document.getElementById('galeria').src;
+            document.getElementById('galeria').src = 'tajlandia.jpg';
+        }    
+        
+        function polub() {
+            var obrazek = document.getElementById('serce').src;
+            document.getElementById('serce').src = 'icon-on.png';
+        }   
+    </script>
+</body>
+</html>

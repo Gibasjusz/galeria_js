@@ -1,0 +1,48 @@
+body {
+    font-family: Helvetica;
+}
+
+#banner, #footer {
+    background-color: rgb( 70, 130, 180);
+    color: white;
+    height: 30px;
+    text-align: center;
+    clear: both;
+}
+
+#main_block {
+    background-color: rgb(176, 196, 222);
+    padding: 50px;
+    text-align: center;
+    clear: both;
+}
+
+#left_block {
+    background-color: rgb( 70, 130, 180);
+    color: white;
+    height: 300px;
+    width: 80%;
+    float: left;
+}
+
+#right_block {
+    background-color: rgb( 70, 130, 180);
+    color: white;
+    height: 300px;
+    width: 20%;
+    float: left;
+}
+
+#main_block img {
+    padding: 3px;
+    border: 1px dashed blue;
+    border-radius: 10px;
+}
+
+#left_block img {
+    height: 40%;
+}
+
+#left_block img:hover {
+    border: 1px solid white;
+}
